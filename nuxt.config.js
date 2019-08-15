@@ -1,5 +1,8 @@
 
 export default {
+  router: {
+    middleware: ['requiresAuth']
+  },
   mode: 'universal',
   /*
   ** Headers of the page
@@ -28,7 +31,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~plugins/routeAuth.js'
+    '~plugins/routeAuth'
   ],
   /*
   ** Nuxt.js dev-modules
